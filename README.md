@@ -25,11 +25,11 @@ Open the Terminal and go to the 'Scripts' folder of the main package ‘sofar_pr
 
 ##### Give running permissions to the code with
 
-$ chmod +x sofar.py
+• chmod +x sofar.py
 
 ##### Run the launch file
 
-' roslaunch sofar_project sofLaunch.launch
+• roslaunch sofar_project sofLaunch.launch
 
 
 ### Contributors:
