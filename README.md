@@ -29,7 +29,7 @@ $ chmod +x sofar.py
 
 ##### Run the launch file
 
-$ roslaunch sofar_project sofLaunch.launch
+' roslaunch sofar_project sofLaunch.launch
 
 
 ### Contributors:
