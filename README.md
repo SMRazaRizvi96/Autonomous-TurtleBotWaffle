@@ -1,4 +1,4 @@
-# Sofar_Project
+# Sofar Project
 
 ##### In this repository, you can find:
 
@@ -23,9 +23,9 @@ Open the terminal and run 'catkin_make' inside your ROS workspace
 
 Open the Terminal and go to the 'Scripts' folder of the main package ‘sofar_project’
 
-##### Give running permissions to the code with
+##### Give running permissions to the code with: 
 
-' chmod +x sofar.py '
+'chmod +x sofar.py'
 
 ##### Run the launch file
 
