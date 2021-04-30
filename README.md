@@ -9,7 +9,7 @@ This folder also contains the launch file and the custom message folder.
 
 ### Data required from other modules:
 
-    Final target as a coordinate published on move_base server.
+Final target as a coordinate published on move_base server.
 
 ### Installation and Running Procedures:
 
