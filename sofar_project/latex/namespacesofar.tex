@@ -1,0 +1,129 @@
+\hypertarget{namespacesofar}{}\section{sofar Namespace Reference}
+\label{namespacesofar}\index{sofar@{sofar}}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \hyperlink{namespacesofar_a825650ee1ca10b1211d10f7129f71d7c}{clbk\+\_\+laser} (msg)
+\item 
+def \hyperlink{namespacesofar_aa6fd2d163a1a1c29d8298f0df2004607}{robot\+Pos} (current\+Pos)
+\item 
+def \hyperlink{namespacesofar_ad92d3e60778d7b31fa72a235856fb583}{image\+Callback} (image)
+\item 
+def \hyperlink{namespacesofar_ab7831b2945a1bd5fb2868bfb1a9a1119}{detect\+Ball} ()
+\item 
+def \hyperlink{namespacesofar_afc2980d2494d4c3237555ed677620318}{track} (radius, center, detected\+\_\+ball)
+\item 
+def \hyperlink{namespacesofar_ab35e3b9e08ad442b61908f372cfa2cdf}{main} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{namespacesofar_a2428f1093186867d48b4347c3ca7e309}{black\+\_\+ball} = Ball()
+\item 
+\hyperlink{namespacesofar_ad90dd34175ed33940dd36296cf282311}{red\+\_\+ball} = Ball()
+\item 
+\hyperlink{namespacesofar_a503bd531a472fdac873e762ac7d4cafe}{yellow\+\_\+ball} = Ball()
+\item 
+\hyperlink{namespacesofar_afc01234c38100dadc0f39a7b337a1f07}{green\+\_\+ball} = Ball()
+\item 
+\hyperlink{namespacesofar_a71e03d466d0c78fd44668097cc2a933a}{blue\+\_\+ball} = Ball()
+\item 
+\hyperlink{namespacesofar_a91e20c53c4643e89b91d7fc7b8607af8}{magenta\+\_\+ball} = Ball()
+\item 
+bool \hyperlink{namespacesofar_a29c2c8f3492c5ba12caac7f042930a8a}{V\+E\+R\+B\+O\+SE} = False
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{namespacesofar_a825650ee1ca10b1211d10f7129f71d7c}\label{namespacesofar_a825650ee1ca10b1211d10f7129f71d7c}} 
+\index{sofar@{sofar}!clbk\+\_\+laser@{clbk\+\_\+laser}}
+\index{clbk\+\_\+laser@{clbk\+\_\+laser}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{clbk\+\_\+laser()}{clbk\_laser()}}
+{\footnotesize\ttfamily def sofar.\+clbk\+\_\+laser (\begin{DoxyParamCaption}\item[{}]{msg }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesofar_ab7831b2945a1bd5fb2868bfb1a9a1119}\label{namespacesofar_ab7831b2945a1bd5fb2868bfb1a9a1119}} 
+\index{sofar@{sofar}!detect\+Ball@{detect\+Ball}}
+\index{detect\+Ball@{detect\+Ball}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{detect\+Ball()}{detectBall()}}
+{\footnotesize\ttfamily def sofar.\+detect\+Ball (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}    It uses Open CV to process the image received, and detects the contours of the different colored balls in the image using different masks for each color. 
+    If any contour is found, it passes the radius and center of the detected countour, and the detected ball object to the function track(). track() is implemented for going near the ball autonomously.  \end{DoxyVerb}
+ \mbox{\Hypertarget{namespacesofar_ad92d3e60778d7b31fa72a235856fb583}\label{namespacesofar_ad92d3e60778d7b31fa72a235856fb583}} 
+\index{sofar@{sofar}!image\+Callback@{image\+Callback}}
+\index{image\+Callback@{image\+Callback}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{image\+Callback()}{imageCallback()}}
+{\footnotesize\ttfamily def sofar.\+image\+Callback (\begin{DoxyParamCaption}\item[{}]{image }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesofar_ab35e3b9e08ad442b61908f372cfa2cdf}\label{namespacesofar_ab35e3b9e08ad442b61908f372cfa2cdf}} 
+\index{sofar@{sofar}!main@{main}}
+\index{main@{main}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def sofar.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}The main function initializes the ros node, subscribes to the topic: robot's odometry topic ("/odom"), laser scan data (/scan), and the robot's camera image topic ("/camera/rgb/image_raw/compressed"), and creates a publisher for the robot's velocity commands on the topic ("/cmd_vel"), and publishes the locations of the balls on their corresponding topics.
+
+This entire .py file corresponds to the following three subsystems:
+1) Rigid Body Detector
+2) Robot Controller
+3) Path Planner 
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacesofar_aa6fd2d163a1a1c29d8298f0df2004607}\label{namespacesofar_aa6fd2d163a1a1c29d8298f0df2004607}} 
+\index{sofar@{sofar}!robot\+Pos@{robot\+Pos}}
+\index{robot\+Pos@{robot\+Pos}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{robot\+Pos()}{robotPos()}}
+{\footnotesize\ttfamily def sofar.\+robot\+Pos (\begin{DoxyParamCaption}\item[{}]{current\+Pos }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{namespacesofar_afc2980d2494d4c3237555ed677620318}\label{namespacesofar_afc2980d2494d4c3237555ed677620318}} 
+\index{sofar@{sofar}!track@{track}}
+\index{track@{track}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{track()}{track()}}
+{\footnotesize\ttfamily def sofar.\+track (\begin{DoxyParamCaption}\item[{}]{radius,  }\item[{}]{center,  }\item[{}]{detected\+\_\+ball }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}This function is used to associate the coordinate to every ball in a way that it records its own location as the ball location, once the robot has reached quite near to the ball. The robot approaches the ball while avoiding obstacles and when a certain threshold of the radius of the ball has been reached the robot stops.  
+\end{DoxyVerb}
+ 
+
+\subsection{Variable Documentation}
+\mbox{\Hypertarget{namespacesofar_a2428f1093186867d48b4347c3ca7e309}\label{namespacesofar_a2428f1093186867d48b4347c3ca7e309}} 
+\index{sofar@{sofar}!black\+\_\+ball@{black\+\_\+ball}}
+\index{black\+\_\+ball@{black\+\_\+ball}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{black\+\_\+ball}{black\_ball}}
+{\footnotesize\ttfamily sofar.\+black\+\_\+ball = Ball()}
+
+\mbox{\Hypertarget{namespacesofar_a71e03d466d0c78fd44668097cc2a933a}\label{namespacesofar_a71e03d466d0c78fd44668097cc2a933a}} 
+\index{sofar@{sofar}!blue\+\_\+ball@{blue\+\_\+ball}}
+\index{blue\+\_\+ball@{blue\+\_\+ball}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{blue\+\_\+ball}{blue\_ball}}
+{\footnotesize\ttfamily sofar.\+blue\+\_\+ball = Ball()}
+
+\mbox{\Hypertarget{namespacesofar_afc01234c38100dadc0f39a7b337a1f07}\label{namespacesofar_afc01234c38100dadc0f39a7b337a1f07}} 
+\index{sofar@{sofar}!green\+\_\+ball@{green\+\_\+ball}}
+\index{green\+\_\+ball@{green\+\_\+ball}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{green\+\_\+ball}{green\_ball}}
+{\footnotesize\ttfamily sofar.\+green\+\_\+ball = Ball()}
+
+\mbox{\Hypertarget{namespacesofar_a91e20c53c4643e89b91d7fc7b8607af8}\label{namespacesofar_a91e20c53c4643e89b91d7fc7b8607af8}} 
+\index{sofar@{sofar}!magenta\+\_\+ball@{magenta\+\_\+ball}}
+\index{magenta\+\_\+ball@{magenta\+\_\+ball}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{magenta\+\_\+ball}{magenta\_ball}}
+{\footnotesize\ttfamily sofar.\+magenta\+\_\+ball = Ball()}
+
+\mbox{\Hypertarget{namespacesofar_ad90dd34175ed33940dd36296cf282311}\label{namespacesofar_ad90dd34175ed33940dd36296cf282311}} 
+\index{sofar@{sofar}!red\+\_\+ball@{red\+\_\+ball}}
+\index{red\+\_\+ball@{red\+\_\+ball}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{red\+\_\+ball}{red\_ball}}
+{\footnotesize\ttfamily sofar.\+red\+\_\+ball = Ball()}
+
+\mbox{\Hypertarget{namespacesofar_a29c2c8f3492c5ba12caac7f042930a8a}\label{namespacesofar_a29c2c8f3492c5ba12caac7f042930a8a}} 
+\index{sofar@{sofar}!V\+E\+R\+B\+O\+SE@{V\+E\+R\+B\+O\+SE}}
+\index{V\+E\+R\+B\+O\+SE@{V\+E\+R\+B\+O\+SE}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{V\+E\+R\+B\+O\+SE}{VERBOSE}}
+{\footnotesize\ttfamily bool sofar.\+V\+E\+R\+B\+O\+SE = False}
+
+\mbox{\Hypertarget{namespacesofar_a503bd531a472fdac873e762ac7d4cafe}\label{namespacesofar_a503bd531a472fdac873e762ac7d4cafe}} 
+\index{sofar@{sofar}!yellow\+\_\+ball@{yellow\+\_\+ball}}
+\index{yellow\+\_\+ball@{yellow\+\_\+ball}!sofar@{sofar}}
+\subsubsection{\texorpdfstring{yellow\+\_\+ball}{yellow\_ball}}
+{\footnotesize\ttfamily sofar.\+yellow\+\_\+ball = Ball()}
+
