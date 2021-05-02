@@ -31,6 +31,9 @@ Open the Terminal and go to the 'Scripts' folder of the main package ‘sofar_pr
 
     roslaunch sofar_project sofLaunch.launch
 
+##### Video Demonstration
+
+https://youtu.be/2Y116pzK5vQ
 
 ### Contributors:
 
