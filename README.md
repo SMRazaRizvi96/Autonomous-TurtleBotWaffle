@@ -30,9 +30,12 @@ Open the Terminal and go to the 'Scripts' folder of the main package ‘sofar_pr
 ##### Run the launch file
 
     roslaunch sofar_project sofLaunch.launch
+    
+### YouTube Link:
 
+    https://www.youtube.com/watch?v=2Y116pzK5vQ
 
-### Contributors:
+### Developers:
 
 Aliya Arystanbek
 
