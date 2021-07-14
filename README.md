@@ -37,9 +37,9 @@ Open the Terminal and go to the 'Scripts' folder of the main package ‘sofar_pr
 
 ### Developers:
 
-Aliya Arystanbek
+[Aliya Arystanbek](https://github.com/AliyaArystanbek)
 
-Laiba Zahid
+[Laiba Zahid](https://github.com/laibazahid26)
 
-Syed Muhammad Raza Rizvi
+[Syed Muhammad Raza Rizvi](https://github.com/SMRazaRizvi96)
 
